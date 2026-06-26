@@ -392,3 +392,65 @@ min-height:180px;
 
 }
 
+/* ===========================
+   VERSION MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.banniere{
+    height:180px;
+}
+
+.contenu{
+    padding:15px;
+}
+
+.galerie{
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.galerie img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    object-position:center;
+}
+
+.presentation,
+.service{
+    padding:20px;
+}
+
+.logo{
+    width:110px;
+}
+
+h1{
+    font-size:32px;
+}
+
+h2{
+    font-size:24px;
+}
+
+.navbar{
+    gap:10px;
+    padding:12px;
+}
+
+.navbar a{
+    font-size:15px;
+}
+
+button{
+    width:100%;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
