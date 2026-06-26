@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Le Domaine de Léa</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/chalet">Le chalet</a>
+    <a href="/photos">Photos</a>
+    <a href="/tarifs">Tarifs</a>
+    <a href="/reservation">Réservation</a>
+    <a href="/supplements">Suppléments</a>
+    <a href="/actualites">Actualités</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+
+<div class="contenu">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+
+<h2>Actualités</h2>
+
+<p class="slogan">
+Retrouvez les dernières nouveautés et les idées de séjour autour du Domaine de Léa.
+</p>
+
+<section class="services">
+
+<div class="service">
+
+<h3>🌿 Les plus belles randonnées des Ardennes</h3>
+
+<p>
+Découvrez les nombreux sentiers balisés accessibles à quelques minutes du Domaine de Léa et profitez de panoramas exceptionnels en pleine nature.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>🎣 La pêche à l'étang reprend !</h3>
+
+<p>
+Notre étang privé est accessible à tous nos visiteurs. Venez passer un moment de détente dans un cadre calme et préservé.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>🛁 Jacuzzi prêt pour la nouvelle saison</h3>
+
+<p>
+Profitez d'un moment de relaxation après une journée de balade ou de découverte des Ardennes françaises grâce à notre jacuzzi privatif.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+
+</html>
