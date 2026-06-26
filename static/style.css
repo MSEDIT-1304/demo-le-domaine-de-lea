@@ -536,4 +536,32 @@ margin:25px auto;
 display:block;
 
 }
+
+@media (max-width:768px){
+
+footer{
+
+padding:30px 15px;
+
 }
+
+footer h3{
+
+font-size:24px;
+
+}
+
+footer p{
+
+font-size:15px;
+
+}
+
+footer hr{
+
+width:180px;
+
+}
+
+}
+
