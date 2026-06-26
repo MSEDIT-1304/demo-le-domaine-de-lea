@@ -2,71 +2,98 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos - Le Domaine de Léa</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Photos - Le Domaine de Léa</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
 
 <nav class="navbar">
-    <a href="/">Accueil</a>
-    <a href="/chalet">Le chalet</a>
-    <a href="/photos">Photos</a>
-    <a href="/tarifs">Tarifs</a>
-    <a href="/reservation">Réservation</a>
-    <a href="/supplements">Suppléments</a>
-    <a href="/actualites">Actualités</a>
-    <a href="/contact">Contact</a>
-    <a href="/panier">Panier</a>
+
+<a href="/">Accueil</a>
+<a href="/chalet">Le chalet</a>
+<a href="/photos">Photos</a>
+<a href="/tarifs">Tarifs</a>
+<a href="/reservation">Réservation</a>
+<a href="/supplements">Suppléments</a>
+<a href="/actualites">Actualités</a>
+<a href="/contact">Contact</a>
+<a href="/panier">Panier</a>
+
 </nav>
 
-<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
 
 <div class="contenu">
 
-<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
-<h2>Galerie photos</h2>
+<h1>Galerie photos</h1>
 
 <p class="slogan">
-Découvrez le Domaine de Léa à travers quelques photos de démonstration illustrant le chalet et son environnement naturel.
-</p>
 
+Découvrez le Domaine de Léa en images.
+
+</p>
 <div class="galerie">
 
-<img src="{{ url_for('static', filename='images/chalet1.jpg') }}" alt="Chalet">
+<img src="{{ url_for('static', filename='images/chalet1.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/jacuzzi.jpg') }}" alt="Jacuzzi">
+<img src="{{ url_for('static', filename='images/chalet2.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/salon.jpg') }}" alt="Salon">
+<img src="{{ url_for('static', filename='images/jacuzzi.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/cuisine.jpg') }}" alt="Cuisine">
+<img src="{{ url_for('static', filename='images/terrasse.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/chambre.jpg') }}" alt="Chambre">
+<img src="{{ url_for('static', filename='images/barbecue.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/sdb.jpg') }}" alt="Salle de bain">
+<img src="{{ url_for('static', filename='images/etang.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/terrasse.jpg') }}" alt="Terrasse">
+<img src="{{ url_for('static', filename='images/salon.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/etang.jpg') }}" alt="Étang">
+<img src="{{ url_for('static', filename='images/cuisine.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/barbecue.jpg') }}" alt="Barbecue">
+<img src="{{ url_for('static', filename='images/chambre.jpg') }}">
 
-<img src="{{ url_for('static', filename='images/foret.jpg') }}" alt="Forêt">
+</div>
+<div class="presentation">
 
-<img src="{{ url_for('static', filename='images/vue.jpg') }}" alt="Vue">
+<h2>Une expérience unique</h2>
 
-<img src="{{ url_for('static', filename='images/repas.jpg') }}" alt="Coin repas">
+<p>
+
+Entre nature, confort et sérénité, chaque espace du Domaine de Léa a été imaginé pour vous offrir un séjour inoubliable.
+
+</p>
+
+<p>
+
+Profitez du jacuzzi, de la terrasse, de l'étang privé et de l'environnement exceptionnel des Ardennes françaises.
+
+</p>
 
 </div>
 
-<p style="margin-top:40px;">
-Les photographies présentées sur cette page sont fournies à titre de démonstration afin d'illustrer les possibilités de présentation d'un hébergement touristique.
-</p>
+<div class="presentation">
 
+<a href="/reservation">
+
+<button>
+
+Réserver votre séjour
+
+</button>
+
+</a>
+
+</div>
 </div>
 
 </body>
