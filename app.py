@@ -134,9 +134,13 @@ def confirmation():
 
     reservation = session.get("reservation")
 
-if reservation is None:
+    if reservation is None:
         return redirect("/")
 
+    return render_template(
+        "confirmation.html",
+        reservation=reservation
+    )
     return render_template(
         "confirmation.html",
         reservation=reservation
