@@ -23,51 +23,69 @@
     <a href="/panier">Panier</a>
 </nav>
 
-<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
 
 <div class="contenu">
 
-<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
-<h2>Votre panier</h2>
+<h2>Votre réservation</h2>
 
-<p class="slogan">
-Cette page présente un exemple de panier pour une réservation.
-</p>
-
-<section class="services">
+{% if reservation %}
 
 <div class="service">
 
-<h3>Aucune réservation</h3>
+<h3>Le Domaine de Léa</h3>
 
 <p>
-Votre panier est actuellement vide.
-</p>
 
-<p>
-Après avoir choisi vos dates de séjour, votre réservation apparaîtra ici avec :
+<strong>Nom :</strong> {{ reservation.nom }} {{ reservation.prenom }}<br><br>
 
-<br><br>
+<strong>Arrivée :</strong> {{ reservation.arrivee }}<br>
 
-✓ Dates d'arrivée et de départ<br>
-✓ Nombre de voyageurs<br>
-✓ Nombre de nuits<br>
-✓ Prix du séjour<br>
-✓ Options choisies<br>
-✓ Total à payer
+<strong>Départ :</strong> {{ reservation.depart }}<br><br>
+
+<strong>Adultes :</strong> {{ reservation.adultes }}<br>
+
+<strong>Enfants :</strong> {{ reservation.enfants }}<br><br>
+
+<strong>Nombre de nuits :</strong> {{ reservation.nuits }}<br>
+
+<strong>Saison :</strong> {{ reservation.saison }}<br>
+
+<strong>Prix / nuit :</strong> {{ reservation.prix_nuit }} €<br><br>
+
+<h3>Total : {{ reservation.total }} €</h3>
 
 </p>
 
 <br>
 
-<a href="/reservation">
-<button>Réserver votre séjour</button>
-</a>
+<button>
+Payer (Démonstration)
+</button>
 
 </div>
 
-</section>
+{% else %}
+
+<p>
+
+Votre panier est vide.
+
+</p>
+
+<a href="/reservation">
+
+<button>
+
+Réserver votre séjour
+
+</button>
+
+</a>
+
+{% endif %}
 
 </div>
 
