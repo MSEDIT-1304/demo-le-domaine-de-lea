@@ -106,7 +106,13 @@ def contact():
 
 @app.route("/panier")
 def panier():
-    return render_template("panier.html")
+
+    reservation = session.get("reservation")
+
+    return render_template(
+        "panier.html",
+        reservation=reservation
+    )
 
 
 if __name__ == "__main__":
