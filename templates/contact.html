@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Le Domaine de Léa</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/chalet">Le chalet</a>
+    <a href="/photos">Photos</a>
+    <a href="/tarifs">Tarifs</a>
+    <a href="/reservation">Réservation</a>
+    <a href="/supplements">Suppléments</a>
+    <a href="/actualites">Actualités</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+
+<div class="contenu">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+
+<h2>Contact</h2>
+
+<p class="slogan">
+Une question ? Besoin d'un renseignement ? Contactez-nous.
+</p>
+
+<form class="contact-form">
+
+<label>Nom</label>
+<input type="text">
+
+<label>Prénom</label>
+<input type="text">
+
+<label>Adresse e-mail</label>
+<input type="email">
+
+<label>Téléphone</label>
+<input type="tel">
+
+<label>Votre message</label>
+<textarea rows="6"></textarea>
+
+<br><br>
+
+<button type="submit">
+Envoyer
+</button>
+
+</form>
+
+<br>
+
+<h3>Coordonnées (Démonstration)</h3>
+
+<p>
+
+<strong>Le Domaine de Léa</strong><br><br>
+
+15 Route des Sapins<br>
+
+08000 Ardennes françaises<br><br>
+
+📞 03 24 00 00 00<br>
+
+📧 contact@domaine-lea-demo.fr
+
+</p>
+
+<p style="font-size:13px;color:#bbbbbb;">
+Les coordonnées ci-dessus sont fictives et sont utilisées uniquement pour la démonstration de ce site.
+</p>
+
+</div>
+
+</body>
+
+</html>
