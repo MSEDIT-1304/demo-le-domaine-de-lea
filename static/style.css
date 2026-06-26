@@ -563,5 +563,57 @@ width:180px;
 
 }
 
+/* ===== FOOTER (force le style) ===== */
+
+footer{
+    width:100%;
+    background:#1d1d1d !important;
+    color:#ffffff !important;
+    text-align:center !important;
+    padding:50px 20px !important;
+    margin-top:60px !important;
 }
+
+.footer-contenu{
+    max-width:900px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.footer-contenu h3{
+    color:#d4af37;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.footer-contenu p{
+    font-size:16px;
+    line-height:1.8;
+    margin:12px 0;
+}
+
+.footer-contenu a{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+.footer-contenu hr{
+    width:280px;
+    margin:30px auto;
+    border:none;
+    border-top:1px solid #555;
+}
+
+@media(max-width:768px){
+
+.footer-contenu h3{
+    font-size:24px;
+}
+
+.footer-contenu p{
+    font-size:14px;
+}
+
+}
+
 
