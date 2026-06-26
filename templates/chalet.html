@@ -1,70 +1,192 @@
-# Le chalet
+<!DOCTYPE html>
+<html lang="fr">
 
-## Un séjour d'exception au cœur des Ardennes françaises
+<head>
 
-Le **Domaine de Léa** est un chalet entièrement équipé situé dans un domaine privé, au cœur d'un environnement naturel préservé. Conçu pour accueillir jusqu'à **6 personnes**, il offre tout le confort nécessaire pour un séjour placé sous le signe de la détente.
+<meta charset="UTF-8">
 
----
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-## Équipements intérieurs
+<title>Le chalet - Le Domaine de Léa</title>
 
-✓ Jusqu'à 6 personnes
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-✓ 3 chambres confortables
+</head>
 
-✓ Cuisine entièrement équipée
+<body>
 
-✓ Salon avec télévision
+<nav class="navbar">
 
-✓ Salle à manger
+<a href="/">Accueil</a>
 
-✓ Salle de bain moderne
+<a href="/chalet">Le chalet</a>
 
-✓ Wi-Fi gratuit
+<a href="/photos">Photos</a>
 
-✓ Chauffage
+<a href="/tarifs">Tarifs</a>
 
----
+<a href="/reservation">Réservation</a>
 
-## Les extérieurs
+<a href="/supplements">Suppléments</a>
 
-✓ Jacuzzi privatif
+<a href="/actualites">Actualités</a>
 
-✓ Grande terrasse aménagée
+<a href="/contact">Contact</a>
 
-✓ Salon de jardin
+<a href="/panier">Panier</a>
 
-✓ Barbecue
+</nav>
 
-✓ Étang privé pour la pêche
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
 
-✓ Parking privé
+<div class="contenu">
 
-✓ Vue dégagée sur la nature
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
----
+<h1>Le chalet</h1>
 
-## Activités à proximité
+<p class="slogan">
 
-✓ Randonnées en forêt
+Un chalet tout confort au cœur d'un domaine privé.
 
-✓ Balades à vélo
+</p>
+<div class="presentation">
 
-✓ Pêche
+<h2>Un séjour en pleine nature</h2>
 
-✓ Découverte des villages ardennais
+<p>
 
-✓ Gastronomie locale
+Le Domaine de Léa est un chalet de standing situé dans un environnement calme et verdoyant au cœur des Ardennes françaises.
 
-✓ Observation de la faune et de la flore
+</p>
 
----
+<p>
 
-## Pourquoi choisir le Domaine de Léa ?
+Pensé pour accueillir jusqu'à 6 personnes, il offre tout le confort nécessaire pour partager un séjour en famille, entre amis ou en couple.
 
-Le Domaine de Léa vous offre un cadre paisible où nature, confort et sérénité se rencontrent. Que vous recherchiez un week-end de détente ou des vacances en famille, tout est réuni pour vous faire vivre un séjour inoubliable.
+</p>
 
----
+</div>
+<div class="galerie">
 
-*Le Domaine de Léa est un site de démonstration réalisé par **Studio Web & Applications**. Les textes, photos, tarifs et réservations sont présentés à titre d'exemple.*
+<div class="service">
 
+<h2>🛏️</h2>
+
+<h3>3 chambres</h3>
+
+<p>
+
+Literie confortable
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h2>🍳</h2>
+
+<h3>Cuisine équipée</h3>
+
+<p>
+
+Plaque, four, lave-vaisselle, cafetière...
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h2>🔥</h2>
+
+<h3>Salon chaleureux</h3>
+
+<p>
+
+Télévision, cheminée et espace détente.
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h2>🚿</h2>
+
+<h3>Salle de bain</h3>
+
+<p>
+
+Douche moderne et équipements complets.
+
+</p>
+
+</div>
+
+</div>
+<div class="presentation">
+
+<h2>Les extérieurs</h2>
+
+<p>
+
+✔ Jacuzzi privatif
+
+<br><br>
+
+✔ Terrasse aménagée
+
+<br><br>
+
+✔ Salon de jardin
+
+<br><br>
+
+✔ Barbecue
+
+<br><br>
+
+✔ Étang privé
+
+<br><br>
+
+✔ Parking
+
+<br><br>
+
+✔ Vue sur la forêt
+
+</p>
+
+</div>
+<div class="presentation">
+
+<h2>Le Domaine de Léa vous attend</h2>
+
+<p>
+
+Chaque détail a été pensé pour offrir un séjour confortable dans un environnement naturel exceptionnel.
+
+</p>
+
+<br>
+
+<a href="/reservation">
+
+<button>
+
+Réserver votre séjour
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
