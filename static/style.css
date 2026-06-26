@@ -453,4 +453,68 @@ table{
     overflow-x:auto;
 }
 
+footer{
+
+margin-top:70px;
+
+background:#1d1d1d;
+
+color:white;
+
+padding:50px 25px;
+
+text-align:center;
+
+}
+
+.footer-contenu{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+footer h3{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+color:#d4af37;
+
+}
+
+footer p{
+
+line-height:1.8;
+
+}
+
+footer hr{
+
+width:320px;
+
+margin:35px auto;
+
+border:none;
+
+border-top:1px solid #555;
+
+}
+
+footer strong{
+
+color:#d4af37;
+
+font-size:18px;
+
+}
+
+footer button{
+
+margin-top:25px;
+
+}
+
 }
