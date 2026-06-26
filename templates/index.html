@@ -1,22 +1,261 @@
-Bannière
-Logo
+<!DOCTYPE html>
+<html lang="fr">
 
-Le Domaine de Léa
+<head>
 
-Nature, détente et confort dans un domaine privé
-au cœur des Ardennes françaises.
+    <meta charset="UTF-8">
 
-[ Réserver votre séjour ]
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Photo du chalet
+    <title>Le Domaine de Léa</title>
 
-Bienvenue au Domaine de Léa...
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-✓ Jacuzzi privatif
-✓ Étang de pêche
-✓ Terrasse
-✓ Barbecue
-✓ Chalet équipé
-✓ Jusqu'à 6 personnes
+</head>
 
-[ Découvrir le chalet ]
+<body>
+
+<nav class="navbar">
+
+    <a href="/">Accueil</a>
+
+    <a href="/chalet">Le chalet</a>
+
+    <a href="/photos">Photos</a>
+
+    <a href="/tarifs">Tarifs</a>
+
+    <a href="/reservation">Réservation</a>
+
+    <a href="/supplements">Suppléments</a>
+
+    <a href="/actualites">Actualités</a>
+
+    <a href="/contact">Contact</a>
+
+    <a href="/panier">Panier</a>
+
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
+
+<div class="contenu">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+
+<h1>Le Domaine de Léa</h1>
+
+<p class="slogan">
+
+Nature • Jacuzzi • Étang privé • Ardennes françaises
+
+</p>
+
+<div class="presentation">
+
+<h2>Bienvenue</h2>
+
+<p>
+
+Bienvenue au <strong>Domaine de Léa</strong>, un chalet entièrement équipé situé dans un domaine privé au cœur des Ardennes françaises.
+
+</p>
+
+<p>
+
+Offrez-vous une parenthèse de calme dans un environnement naturel exceptionnel avec jacuzzi privatif, terrasse, barbecue, étang de pêche et forêt à perte de vue.
+
+</p>
+
+<a href="/reservation">
+
+<button>
+
+Réserver votre séjour
+
+</button>
+
+</a>
+
+</div>
+<div class="galerie">
+
+<div class="service">
+
+<h2>🏡</h2>
+
+<h3>Chalet entièrement équipé</h3>
+
+<p>
+
+3 chambres confortables<br>
+Cuisine équipée<br>
+Salon chaleureux<br>
+Salle de bain moderne<br>
+Wi-Fi gratuit
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h2>🛁</h2>
+
+<h3>Jacuzzi privatif</h3>
+
+<p>
+
+Profitez d'un espace détente accessible toute l'année dans un cadre naturel exceptionnel.
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h2>🎣</h2>
+
+<h3>Étang privé</h3>
+
+<p>
+
+Pêche de loisir<br>
+Calme absolu<br>
+Nature préservée
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h2>🌲</h2>
+
+<h3>Domaine privé</h3>
+
+<p>
+
+Forêts<br>
+Randonnées<br>
+Déconnexion totale
+
+</p>
+
+</div>
+
+</div>
+<div class="presentation">
+
+<h2>Pourquoi choisir Le Domaine de Léa ?</h2>
+
+<p>
+
+✔ Domaine privé au cœur des Ardennes françaises<br><br>
+
+✔ Jacuzzi privatif accessible toute l'année<br><br>
+
+✔ Étang privé pour les amateurs de pêche<br><br>
+
+✔ Grande terrasse avec mobilier de jardin<br><br>
+
+✔ Barbecue pour vos repas en extérieur<br><br>
+
+✔ Parking privé gratuit<br><br>
+
+✔ Wi-Fi haut débit<br><br>
+
+✔ Environnement calme, idéal pour se ressourcer
+
+</p>
+
+</div>
+
+<h2>Découvrez le Domaine</h2>
+
+<div class="galerie">
+
+<img src="{{ url_for('static', filename='images/chalet1.jpg') }}" alt="Chalet">
+
+<img src="{{ url_for('static', filename='images/jacuzzi.jpg') }}" alt="Jacuzzi">
+
+<img src="{{ url_for('static', filename='images/terrasse.jpg') }}" alt="Terrasse">
+
+<img src="{{ url_for('static', filename='images/etang.jpg') }}" alt="Étang">
+
+</div>
+<div class="presentation">
+
+<h2>Ils ont apprécié leur séjour</h2>
+
+<div class="service">
+
+<h3>★★★★★</h3>
+
+<p>
+
+"Un véritable havre de paix. Le jacuzzi et l'étang ont fait le bonheur de toute la famille. Nous reviendrons avec plaisir."
+
+</p>
+
+<strong>— Sophie et Julien</strong>
+
+</div>
+
+<div class="service">
+
+<h3>★★★★★</h3>
+
+<p>
+
+"Le chalet est magnifique, très bien équipé et parfaitement entretenu. Un cadre exceptionnel pour se ressourcer."
+
+</p>
+
+<strong>— Claire M.</strong>
+
+</div>
+
+<div class="service">
+
+<h3>★★★★★</h3>
+
+<p>
+
+"Week-end parfait entre amis. Terrasse, barbecue, forêt et calme absolu. Nous recommandons sans hésiter."
+
+</p>
+
+<strong>— David L.</strong>
+
+</div>
+
+</div>
+<div class="presentation">
+
+<h2>Réservez votre séjour dès aujourd'hui</h2>
+
+<p>
+
+Le Domaine de Léa vous accueille toute l'année pour un séjour placé sous le signe du confort, de la nature et de la détente.
+
+</p>
+
+<br>
+
+<a href="/reservation">
+
+<button>
+
+Consulter les disponibilités
+
+</button>
+
+</a>
+
+</div>
+</div>
+
+</body>
+
+</html>
