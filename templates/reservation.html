@@ -2,41 +2,48 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réservation - Le Domaine de Léa</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Réservation - Le Domaine de Léa</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
 
 <nav class="navbar">
-    <a href="/">Accueil</a>
-    <a href="/chalet">Le chalet</a>
-    <a href="/photos">Photos</a>
-    <a href="/tarifs">Tarifs</a>
-    <a href="/reservation">Réservation</a>
-    <a href="/supplements">Suppléments</a>
-    <a href="/actualites">Actualités</a>
-    <a href="/contact">Contact</a>
-    <a href="/panier">Panier</a>
+
+<a href="/">Accueil</a>
+<a href="/chalet">Le chalet</a>
+<a href="/photos">Photos</a>
+<a href="/tarifs">Tarifs</a>
+<a href="/reservation">Réservation</a>
+<a href="/supplements">Suppléments</a>
+<a href="/actualites">Actualités</a>
+<a href="/contact">Contact</a>
+<a href="/panier">Panier</a>
+
 </nav>
 
-<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
 
 <div class="contenu">
 
-<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
-<h2>Réserver votre séjour</h2>
+<h1>Réserver votre séjour</h1>
 
 <p class="slogan">
-Choisissez vos dates et préparez votre séjour au Domaine de Léa.
+
+Choisissez vos dates et préparez votre séjour.
+
 </p>
 
 <form class="contact-form" method="POST">
-
 <label>Date d'arrivée</label>
 
 <input type="date" name="arrivee" required>
@@ -48,22 +55,26 @@ Choisissez vos dates et préparez votre séjour au Domaine de Léa.
 <label>Nombre d'adultes</label>
 
 <select name="adultes">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
+
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+
 </select>
 
 <label>Nombre d'enfants</label>
 
 <select name="enfants">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
+
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+
 </select>
 
 <label>Nom</label>
@@ -82,14 +93,16 @@ Choisissez vos dates et préparez votre séjour au Domaine de Léa.
 
 <input type="email" name="email" required>
 
-<label>Message (facultatif)</label>
+<label>Message</label>
 
-<textarea name="message" rows="5"></textarea>
+<textarea name="message" rows="6"></textarea>
 
-<br><br>
+<br>
 
 <button type="submit">
+
 Ajouter au panier
+
 </button>
 
 </form>
@@ -99,3 +112,5 @@ Ajouter au panier
 </body>
 
 </html>
+
+    
