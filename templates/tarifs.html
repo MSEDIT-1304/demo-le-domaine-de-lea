@@ -2,93 +2,163 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifs - Le Domaine de Léa</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tarifs - Le Domaine de Léa</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
 
 <nav class="navbar">
-    <a href="/">Accueil</a>
-    <a href="/chalet">Le chalet</a>
-    <a href="/photos">Photos</a>
-    <a href="/tarifs">Tarifs</a>
-    <a href="/reservation">Réservation</a>
-    <a href="/supplements">Suppléments</a>
-    <a href="/actualites">Actualités</a>
-    <a href="/contact">Contact</a>
-    <a href="/panier">Panier</a>
+
+<a href="/">Accueil</a>
+<a href="/chalet">Le chalet</a>
+<a href="/photos">Photos</a>
+<a href="/tarifs">Tarifs</a>
+<a href="/reservation">Réservation</a>
+<a href="/supplements">Suppléments</a>
+<a href="/actualites">Actualités</a>
+<a href="/contact">Contact</a>
+<a href="/panier">Panier</a>
+
 </nav>
 
-<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
 
 <div class="contenu">
 
-<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
-<h2>Nos tarifs</h2>
+<h1>Nos tarifs</h1>
 
 <p class="slogan">
-Profitez d'un séjour dans un domaine privé au cœur des Ardennes françaises.
+
+Des prix simples et transparents toute l'année.
+
 </p>
+<div class="presentation">
 
-<section class="services">
+<table>
 
-<div class="service">
+<tr>
 
-<h3>Tarifs par nuit</h3>
+<th>Période</th>
+
+<th>Prix / nuit</th>
+
+</tr>
+
+<tr>
+
+<td>Basse saison</td>
+
+<td>120 €</td>
+
+</tr>
+
+<tr>
+
+<td>Moyenne saison</td>
+
+<td>150 €</td>
+
+</tr>
+
+<tr>
+
+<td>Haute saison</td>
+
+<td>190 €</td>
+
+</tr>
+
+</table>
+
+</div>
+<div class="presentation">
+
+<h2>Le séjour comprend</h2>
 
 <p>
 
-<strong>Basse saison</strong><br>
-120 € / nuit<br><br>
+✔ Chalet entièrement équipé
 
-<strong>Moyenne saison</strong><br>
-150 € / nuit<br><br>
+<br><br>
 
-<strong>Haute saison</strong><br>
-190 € / nuit
+✔ Jacuzzi privatif
+
+<br><br>
+
+✔ Étang privé
+
+<br><br>
+
+✔ Terrasse aménagée
+
+<br><br>
+
+✔ Barbecue
+
+<br><br>
+
+✔ Wi-Fi
+
+<br><br>
+
+✔ Parking privé
+
+<br><br>
+
+✔ Linge de lit fourni
 
 </p>
 
-<h3>Le séjour comprend</h3>
+</div>
+<div class="presentation">
+
+<h2>Conditions</h2>
 
 <p>
 
-✓ Chalet entièrement équipé<br>
-✓ Jacuzzi privatif<br>
-✓ Étang de pêche<br>
-✓ Terrasse aménagée<br>
-✓ Barbecue<br>
-✓ Parking privé<br>
-✓ Wi-Fi gratuit<br>
-✓ Linge de lit fourni
+Séjour minimum : 2 nuits
+
+<br><br>
+
+Arrivée à partir de 16 h
+
+<br><br>
+
+Départ avant 10 h
+
+<br><br>
+
+Animaux acceptés sur demande
+
+<br><br>
+
+Chalet non-fumeur
 
 </p>
 
-<h3>Conditions</h3>
-
-<p>
-
-✓ Séjour minimum : 2 nuits<br>
-✓ Arrivée à partir de 16 h<br>
-✓ Départ avant 10 h<br>
-✓ Animaux acceptés sur demande<br>
-✓ Chalet non-fumeur
-
-</p>
+<br>
 
 <a href="/reservation">
-<button>Réserver votre séjour</button>
+
+<button>
+
+Réserver votre séjour
+
+</button>
+
 </a>
 
 </div>
-
-</section>
-
 </div>
 
 </body>
