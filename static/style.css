@@ -240,7 +240,7 @@ td{
 }
 footer{
 
-    margin-top:70px;
+    margin-top:35px;
 
     background:#1d1d1d;
 
@@ -248,10 +248,9 @@ footer{
 
     text-align:center;
 
-    padding:45px 25px;
+    padding:25px 20px;
 
 }
-
 .footer-contenu{
 
     max-width:900px;
@@ -272,9 +271,9 @@ footer{
 
 .footer-contenu p{
 
-    margin:12px 0;
+    margin:6px 0;
 
-    line-height:1.8;
+    line-height:1.4;
 
     font-size:16px;
 
@@ -288,9 +287,9 @@ footer{
 
 .footer-contenu hr{
 
-    width:280px;
+    width:220px;
 
-    margin:30px auto;
+    margin:18px auto;
 
     border:none;
 
@@ -314,7 +313,7 @@ footer{
 
 footer button{
 
-    margin:25px auto;
+    margin:15px auto;
 
     display:block;
 
