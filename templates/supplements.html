@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppléments - Le Domaine de Léa</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/chalet">Le chalet</a>
+    <a href="/photos">Photos</a>
+    <a href="/tarifs">Tarifs</a>
+    <a href="/reservation">Réservation</a>
+    <a href="/supplements">Suppléments</a>
+    <a href="/actualites">Actualités</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+
+<div class="contenu">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Domaine de Léa" class="logo">
+
+<h2>Suppléments</h2>
+
+<p class="slogan">
+Personnalisez votre séjour grâce à nos services complémentaires.
+</p>
+
+<section class="services">
+
+<div class="service">
+
+<h3>Nos prestations complémentaires</h3>
+
+<p>
+
+✓ Petit-déjeuner livré : <strong>15 € / personne</strong><br><br>
+
+✓ Panier gourmand régional : <strong>35 €</strong><br><br>
+
+✓ Bois pour la cheminée : <strong>20 €</strong><br><br>
+
+✓ Location de vélos : <strong>18 € / jour</strong><br><br>
+
+✓ Départ tardif (jusqu'à 16 h) : <strong>40 €</strong><br><br>
+
+✓ Animal de compagnie : <strong>25 € / séjour</strong><br><br>
+
+✓ Recharge véhicule électrique : <strong>12 €</strong>
+
+</p>
+
+<h3>Démonstration</h3>
+
+<p>
+
+Cette page présente un exemple de prestations supplémentaires pouvant être ajoutées à un site de réservation.
+
+Chaque projet peut être entièrement personnalisé selon les besoins du propriétaire.
+
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+
+</html>
