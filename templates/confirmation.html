@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Réservation confirmée</title>
+<title>Fonctionnalités disponibles</title>
 
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
@@ -18,10 +18,15 @@
 <nav class="navbar">
 
 <a href="/">Accueil</a>
+
 <a href="/chalet">Le chalet</a>
+
 <a href="/photos">Photos</a>
+
 <a href="/tarifs">Tarifs</a>
+
 <a href="/reservation">Réservation</a>
+
 <a href="/contact">Contact</a>
 
 </nav>
@@ -30,116 +35,94 @@
 
 <div class="contenu">
 
-<div class="presentation">
-
-<h1>Merci pour votre réservation</h1>
+<h1>Merci pour votre visite</h1>
 
 <p class="slogan">
 
-Votre demande a bien été enregistrée.
-
-</p>
-<h2>Récapitulatif</h2>
-
-<p>
-
-Nom :
-
-<strong>{{ reservation.nom }} {{ reservation.prenom }}</strong>
+Cette démonstration vous présente un aperçu des nombreuses fonctionnalités pouvant être intégrées à votre futur site internet. 
+Chaque réalisation est entièrement conçue sur mesure afin de répondre parfaitement à votre activité, à vos besoins et à votre budget.
 
 </p>
 
-<p>
-
-Arrivée :
-
-<strong>{{ reservation.arrivee }}</strong>
-
-</p>
-
-<p>
-
-Départ :
-
-<strong>{{ reservation.depart }}</strong>
-
-</p>
-
-<p>
-
-Nombre de nuits :
-
-<strong>{{ reservation.nuits }}</strong>
-
-</p>
-
-<p>
-
-Montant :
-
-<strong>{{ reservation.total }} €</strong>
-
-</p>
 <div class="presentation">
 
-<h2>Confirmation</h2>
+<h2>📅 Synchronisation avec Google Agenda</h2>
 
 <p>
 
-✔ Réservation enregistrée
+Votre futur site internet peut être relié à Google Agenda afin d'automatiser entièrement la gestion de vos réservations.
+
+</p>
+
+<div class="presentation">
+
+<h2>Fonctionnalités pouvant être intégrées</h2>
+
+<p>
+
+✔ Ajout automatique de chaque réservation dans Google Agenda.
 
 <br><br>
 
-✔ Paiement simulé accepté
+✔ Modification automatique d'une réservation.
 
 <br><br>
 
-✔ Un e-mail de confirmation pourra être envoyé ultérieurement.
+✔ Suppression automatique d'une réservation annulée.
+
+<br><br>
+
+✔ Blocage des dates déjà réservées.
+
+<br><br>
+
+✔ Calendrier des disponibilités en temps réel.
+
+<br><br>
+
+✔ Synchronisation avec plusieurs hébergements.
 
 </p>
 
 </div>
-<a href="/">
 
-<button>
+<div class="presentation">
 
-Retour à l'accueil
-
-</button>
-
-</a>
-
-</div>
-
-</div>
-
-<footer>
-
-<div class="footer-contenu">
-
-<h3>Le Domaine de Léa</h3>
+<h2>Notifications automatiques</h2>
 
 <p>
 
-Ce site est un exemple de réalisation.
+✔ E-mail de confirmation envoyé au client.
 
 <br><br>
 
-Chaque projet est entièrement conçu sur mesure selon votre activité, vos besoins et votre identité visuelle.
+✔ Notification immédiate au propriétaire.
+
+<br><br>
+
+✔ Gestion des acomptes.
+
+<br><br>
+
+✔ Paiement sécurisé (Stripe, PayPal, etc.).
+
+<br><br>
+
+✔ Fonctionnalités entièrement personnalisables selon votre activité.
 
 </p>
 
-<br>
+</div>
+
+<div class="presentation">
+
+<h2>Studio Web & Applications - M.S Édit</h2>
 
 <p>
 
-📞 07 44 42 74 01
+Chaque site internet est conçu sur mesure.
 
-</p>
-
-<p>
-
-✉ ms.edit.mg@gmail.com
+Les fonctionnalités sont adaptées à votre activité, vos besoins et votre budget.
 
 </p>
 
@@ -149,61 +132,15 @@ Chaque projet est entièrement conçu sur mesure selon votre activité, vos beso
 
 <button>
 
-Demander un devis gratuit
+Découvrir Studio Web & Applications
 
 </button>
 
 </a>
 
-<hr>
-
-<p>
-
-<strong>Studio Web & Applications - M.S Édit</strong>
-
-</p>
-
-<p>
-
-Création de sites internet • Applications mobiles • Solutions numériques sur mesure
-
-</p>
-
-<p>
-
-🌐 <a href="https://studio-web-applications.onrender.com" target="_blank">
-
-Découvrir Studio Web & Applications
-
-</a>
-
-</p>
-
-<br>
-
-<p>
-
-<strong>Site vitrine Premium - À partir de 750 € TTC</strong>
-
-</p>
-
-<p>
-
-Création de sites internet professionnels adaptés à votre activité.
-
-</p>
-
-<br>
-
-<p>
-
-© 2026 Studio Web & Applications - M.S Édit - Tous droits réservés.
-
-</p>
-
 </div>
 
-</footer>
+</div>
 
 </body>
 
