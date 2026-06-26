@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Le Domaine de Léa</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/chalet">Le chalet</a>
+    <a href="/photos">Photos</a>
+    <a href="/tarifs">Tarifs</a>
+    <a href="/reservation">Réservation</a>
+    <a href="/supplements">Suppléments</a>
+    <a href="/actualites">Actualités</a>
+    <a href="/contact">Contact</a>
+    <a href="/panier">Panier</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" alt="Le Domaine de Léa" class="banniere">
+
+<div class="contenu">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+
+<h2>Réserver votre séjour</h2>
+
+<p class="slogan">
+Choisissez vos dates et préparez votre séjour au Domaine de Léa.
+</p>
+
+<form class="contact-form">
+
+<label>Date d'arrivée</label>
+
+<input type="date">
+
+<label>Date de départ</label>
+
+<input type="date">
+
+<label>Nombre d'adultes</label>
+
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+</select>
+
+<label>Nombre d'enfants</label>
+
+<select>
+    <option>0</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+</select>
+
+<label>Nom</label>
+
+<input type="text">
+
+<label>Prénom</label>
+
+<input type="text">
+
+<label>Téléphone</label>
+
+<input type="tel">
+
+<label>Adresse e-mail</label>
+
+<input type="email">
+
+<label>Message (facultatif)</label>
+
+<textarea rows="5"></textarea>
+
+<br><br>
+
+<button type="submit">
+Ajouter au panier
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
