@@ -1,113 +1,24 @@
-<!DOCTYPE html>
-<html lang="fr">
+🔒 Démonstration
 
-<head>
+Vous êtes arrivé à l'étape du paiement.
 
-<meta charset="UTF-8">
+Lors de la création de votre futur site internet, le moyen de paiement de votre choix pourra être intégré :
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+✓ Stripe
+✓ PayPal
+✓ Virement bancaire
+✓ Paiement sur place
+✓ Acompte
+✓ Aucun paiement en ligne
 
-<title>Paiement sécurisé</title>
+Le paiement en ligne est entièrement personnalisable selon votre activité et n'est pas obligatoire.
 
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+------------------------------------------------
 
-</head>
+Montant du séjour
 
-<body>
+{{ reservation.total }} €
 
-<nav class="navbar">
+------------------------------------------------
 
-<a href="/">Accueil</a>
-<a href="/chalet">Le chalet</a>
-<a href="/photos">Photos</a>
-<a href="/tarifs">Tarifs</a>
-<a href="/reservation">Réservation</a>
-<a href="/contact">Contact</a>
-
-</nav>
-
-<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
-
-<div class="contenu">
-
-<h1>Paiement sécurisé</h1>
-
-<div class="contact-form">
-
-<h2>Résumé de votre séjour</h2>
-
-<p><strong>Total :</strong> {{ reservation.total }} €</p>
-
-<form method="POST">
-<label>Nom du titulaire</label>
-
-<input
-type="text"
-name="titulaire"
-placeholder="Nom du titulaire"
-required>
-
-<label>Numéro de carte</label>
-
-<input
-type="text"
-name="carte"
-placeholder="1234 5678 9012 3456"
-maxlength="19"
-required>
-
-<label>Date d'expiration</label>
-
-<input
-type="text"
-name="expiration"
-placeholder="MM/AA"
-maxlength="5"
-required>
-
-<label>Cryptogramme</label>
-
-<input
-type="password"
-name="cvv"
-placeholder="123"
-maxlength="4"
-required>
-
-<br>
-
-<button type="submit">
-
-Payer {{ reservation.total }} €
-
-</button>
-
-</form>
-
-</div>
-
-<div class="presentation">
-
-<h2>Paiement de démonstration</h2>
-
-<p>
-
-Cette page simule un paiement sécurisé.
-
-<br><br>
-
-Aucun débit bancaire n'est effectué.
-
-<br><br>
-
-Après validation, votre réservation sera confirmée.
-
-</p>
-
-</div>
-
-</div>
-
-</body>
-
-</html>
+[ Continuer la démonstration ]
