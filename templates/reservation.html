@@ -25,7 +25,6 @@
 <a href="/supplements">Suppléments</a>
 <a href="/actualites">Actualités</a>
 <a href="/contact">Contact</a>
-<a href="/panier">Panier</a>
 
 </nav>
 
@@ -35,11 +34,11 @@
 
 <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
-<h1>Réserver votre séjour</h1>
+<h1>Réservation en ligne</h1>
 
 <p class="slogan">
 
-Choisissez vos dates et préparez votre séjour.
+Découvrez le fonctionnement d'un système de réservation professionnel.
 
 </p>
 
@@ -49,13 +48,13 @@ Choisissez vos dates et préparez votre séjour.
 
 <p>
 
-Afin de découvrir toutes les fonctionnalités de ce site, nous vous invitons à effectuer une réservation de démonstration.
+Cette démonstration vous présente le fonctionnement d'un système de réservation en ligne entièrement personnalisable.
 
 </p>
 
 <p>
 
-Vous pourrez ainsi découvrir le parcours complet :
+Vous découvrirez le parcours complet proposé à vos futurs clients :
 
 </p>
 
@@ -65,7 +64,7 @@ Vous pourrez ainsi découvrir le parcours complet :
 
 <br><br>
 
-✔ Calcul automatique du montant du séjour
+✔ Calcul automatique du tarif
 
 <br><br>
 
@@ -73,18 +72,17 @@ Vous pourrez ainsi découvrir le parcours complet :
 
 <br><br>
 
-✔ Paiement (démonstration)
+✔ Paiement en ligne (optionnel)
 
 <br><br>
 
-✔ Présentation des nombreuses fonctionnalités pouvant être intégrées à votre futur site internet
+✔ Présentation des fonctionnalités pouvant être intégrées à votre futur site internet
+
 </p>
 
 <p>
 
 <strong>
-
-Les informations saisies sont uniquement destinées à la démonstration.
 
 Aucune réservation réelle ni aucun paiement ne seront effectués.
 
@@ -100,70 +98,67 @@ Aucune réservation réelle ni aucun paiement ne seront effectués.
 
 <img src="{{ url_for('static', filename='images/reservation-demo.png') }}" class="capture-demo">
 
+<p style="text-align:center;margin-top:20px;">
+
+Exemple d'un formulaire de réservation pouvant être entièrement personnalisé selon vos besoins.
+
+</p>
+
 </div>
-    
-<label>Date d'arrivée</label>
 
-<input type="date" name="arrivee" required>
+<div class="presentation">
 
-<label>Date de départ</label>
+<h2>Comment fonctionne une réservation ?</h2>
 
-<input type="date" name="depart" required>
+<p>
 
-<label>Nombre d'adultes</label>
+1️⃣ Le client sélectionne ses dates de séjour.
 
-<select name="adultes">
+<br><br>
 
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
+2️⃣ Il complète le formulaire de réservation.
 
-</select>
+<br><br>
 
-<label>Nombre d'enfants</label>
+3️⃣ Le tarif est calculé automatiquement.
 
-<select name="enfants">
+<br><br>
 
-<option value="0">0</option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
+4️⃣ La réservation est ajoutée au panier.
 
-</select>
+<br><br>
 
-<label>Nom</label>
+5️⃣ Le paiement est réalisé via la solution de votre choix (Stripe, PayPal, acompte, virement, paiement sur place...).
 
-<input type="text" name="nom" required>
+<br><br>
 
-<label>Prénom</label>
+6️⃣ Une confirmation est envoyée automatiquement au client.
 
-<input type="text" name="prenom" required>
+<br><br>
 
-<label>Téléphone</label>
+7️⃣ Le propriétaire reçoit immédiatement la réservation.
 
-<input type="tel" name="telephone" required>
+<br><br>
 
-<label>Adresse e-mail</label>
+8️⃣ Les réservations peuvent être synchronisées avec Google Agenda et le calendrier des disponibilités.
 
-<input type="email" name="email" required>
+</p>
 
-<label>Message</label>
+</div>
 
-<textarea name="message" rows="6"></textarea>
+<div style="text-align:center; margin-top:40px;">
 
-<br>
+<a href="/confirmation">
 
-<button type="submit">
+<button>
 
-Ajouter au panier
+Découvrir les fonctionnalités complémentaires
 
 </button>
 
-</form>
+</a>
+
+</div>
 
 </div>
 
@@ -258,5 +253,3 @@ Création de sites internet professionnels adaptés à votre activité.
 </body>
 
 </html>
-
-    
