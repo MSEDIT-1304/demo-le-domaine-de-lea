@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Réservation confirmée</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="/">Accueil</a>
+<a href="/chalet">Le chalet</a>
+<a href="/photos">Photos</a>
+<a href="/tarifs">Tarifs</a>
+<a href="/reservation">Réservation</a>
+<a href="/contact">Contact</a>
+
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
+
+<div class="contenu">
+
+<div class="presentation">
+
+<h1>Merci pour votre réservation</h1>
+
+<p class="slogan">
+
+Votre demande a bien été enregistrée.
+
+</p>
+<h2>Récapitulatif</h2>
+
+<p>
+
+Nom :
+
+<strong>{{ reservation.nom }} {{ reservation.prenom }}</strong>
+
+</p>
+
+<p>
+
+Arrivée :
+
+<strong>{{ reservation.arrivee }}</strong>
+
+</p>
+
+<p>
+
+Départ :
+
+<strong>{{ reservation.depart }}</strong>
+
+</p>
+
+<p>
+
+Nombre de nuits :
+
+<strong>{{ reservation.nuits }}</strong>
+
+</p>
+
+<p>
+
+Montant :
+
+<strong>{{ reservation.total }} €</strong>
+
+</p>
+<div class="presentation">
+
+<h2>Confirmation</h2>
+
+<p>
+
+✔ Réservation enregistrée
+
+<br><br>
+
+✔ Paiement simulé accepté
+
+<br><br>
+
+✔ Un e-mail de confirmation pourra être envoyé ultérieurement.
+
+</p>
+
+</div>
+<a href="/">
+
+<button>
+
+Retour à l'accueil
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
