@@ -2,25 +2,31 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panier - Le Domaine de Léa</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Votre réservation - Le Domaine de Léa</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
 
 <nav class="navbar">
-    <a href="/">Accueil</a>
-    <a href="/chalet">Le chalet</a>
-    <a href="/photos">Photos</a>
-    <a href="/tarifs">Tarifs</a>
-    <a href="/reservation">Réservation</a>
-    <a href="/supplements">Suppléments</a>
-    <a href="/actualites">Actualités</a>
-    <a href="/contact">Contact</a>
-    <a href="/panier">Panier</a>
+
+<a href="/">Accueil</a>
+<a href="/chalet">Le chalet</a>
+<a href="/photos">Photos</a>
+<a href="/tarifs">Tarifs</a>
+<a href="/reservation">Réservation</a>
+<a href="/supplements">Suppléments</a>
+<a href="/actualites">Actualités</a>
+<a href="/contact">Contact</a>
+<a href="/panier">Panier</a>
+
 </nav>
 
 <img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
@@ -29,51 +35,110 @@
 
 <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
 
-<h2>Votre réservation</h2>
+<h1>Votre réservation</h1>
 
+<p class="slogan">
+
+Retrouvez le récapitulatif de votre séjour.
+
+</p>
 {% if reservation %}
 
-<div class="service">
+<div class="presentation">
 
-<h3>Le Domaine de Léa</h3>
+<h2>Le Domaine de Léa</h2>
 
 <p>
 
-<strong>Nom :</strong> {{ reservation.nom }} {{ reservation.prenom }}<br><br>
+<strong>Nom :</strong>
 
-<strong>Arrivée :</strong> {{ reservation.arrivee }}<br>
-
-<strong>Départ :</strong> {{ reservation.depart }}<br><br>
-
-<strong>Adultes :</strong> {{ reservation.adultes }}<br>
-
-<strong>Enfants :</strong> {{ reservation.enfants }}<br><br>
-
-<strong>Nombre de nuits :</strong> {{ reservation.nuits }}<br>
-
-<strong>Saison :</strong> {{ reservation.saison }}<br>
-
-<strong>Prix / nuit :</strong> {{ reservation.prix_nuit }} €<br><br>
-
-<h3>Total : {{ reservation.total }} €</h3>
+{{ reservation.nom }} {{ reservation.prenom }}
 
 </p>
+
+<p>
+
+<strong>Arrivée :</strong>
+
+{{ reservation.arrivee }}
+
+</p>
+
+<p>
+
+<strong>Départ :</strong>
+
+{{ reservation.depart }}
+
+</p>
+
+<p>
+
+<strong>Adultes :</strong>
+
+{{ reservation.adultes }}
+
+</p>
+
+<p>
+
+<strong>Enfants :</strong>
+
+{{ reservation.enfants }}
+
+</p>
+
+<p>
+
+<strong>Nombre de nuits :</strong>
+
+{{ reservation.nuits }}
+
+</p>
+<p>
+
+<strong>Saison :</strong>
+
+{{ reservation.saison }}
+
+</p>
+
+<p>
+
+<strong>Prix par nuit :</strong>
+
+{{ reservation.prix_nuit }} €
+
+</p>
+
+<h2>
+
+Total : {{ reservation.total }} €
+
+</h2>
 
 <br>
 
 <button>
+
 Payer (Démonstration)
+
 </button>
 
 </div>
-
 {% else %}
+
+<div class="presentation">
+
+<h2>Votre panier est vide</h2>
 
 <p>
 
-Votre panier est vide.
+Aucune réservation n'a encore été enregistrée.
 
 </p>
+
+<br>
 
 <a href="/reservation">
 
@@ -84,6 +149,8 @@ Réserver votre séjour
 </button>
 
 </a>
+
+</div>
 
 {% endif %}
 
