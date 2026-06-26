@@ -114,6 +114,32 @@ def panier():
         reservation=reservation
     )
 
+@app.route("/paiement", methods=["GET", "POST"])
+def paiement():
 
+    reservation = session.get("reservation")
+
+    if reservation is None:
+        return redirect("/reservation")
+
+    if request.method == "POST":
+        return redirect("/confirmation")
+
+    return render_template(
+        "paiement.html",
+        reservation=reservation
+    )
+@app.route("/confirmation")
+def confirmation():
+
+    reservation = session.get("reservation")
+
+if reservation is None:
+        return redirect("/")
+
+    return render_template(
+        "confirmation.html",
+        reservation=reservation
+    )
 if __name__ == "__main__":
     app.run(debug=True)
