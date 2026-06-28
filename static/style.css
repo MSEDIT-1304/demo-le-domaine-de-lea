@@ -454,14 +454,14 @@ table{
 
 .capture-demo{
     display:block;
-    width:1000px;
-    max-width:100%;
+    width:1100px;
+    max-width:105%;
     height:auto;
-    margin:30px auto;
+    margin:30px auto 30px -25px;
     border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
 
+}
 @media (max-width:768px){
 
     .capture-demo{
