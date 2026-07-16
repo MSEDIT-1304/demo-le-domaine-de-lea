@@ -32,63 +32,35 @@ def tarifs():
 
 from datetime import datetime
 
-@app.route("/reservation", methods=["GET", "POST"])
+@app.route("/reservation")
 def reservation():
 
-    if request.method == "POST":
+    session["reservation"] = {
 
-        arrivee = request.form["arrivee"]
-        depart = request.form["depart"]
-        adultes = int(request.form["adultes"])
-        enfants = int(request.form["enfants"])
-        nom = request.form["nom"]
-        prenom = request.form["prenom"]
-        telephone = request.form["telephone"]
-        email = request.form["email"]
-        message = request.form["message"]
+        "nom": "Dupont",
 
-        date_arrivee = datetime.strptime(arrivee, "%Y-%m-%d")
-        date_depart = datetime.strptime(depart, "%Y-%m-%d")
+        "prenom": "Jean",
 
-        nuits = (date_depart - date_arrivee).days
+        "arrivee": "15/08/2026",
 
-        mois = date_arrivee.month
+        "depart": "22/08/2026",
 
-        if mois in [7, 8]:
-            prix_nuit = PRIX["haute"]
-            saison = "Haute saison"
+        "adultes": 2,
 
-        elif mois in [5, 6, 9]:
-            prix_nuit = PRIX["moyenne"]
-            saison = "Moyenne saison"
+        "enfants": 2,
 
-        else:
-            prix_nuit = PRIX["basse"]
-            saison = "Basse saison"
+        "nuits": 7,
 
-        total = nuits * prix_nuit
+        "saison": "Haute saison",
 
-        session["reservation"] = {
-            "arrivee": arrivee,
-            "depart": depart,
-            "adultes": adultes,
-            "enfants": enfants,
-            "nom": nom,
-            "prenom": prenom,
-            "telephone": telephone,
-            "email": email,
-            "message": message,
-            "nuits": nuits,
-            "prix_nuit": prix_nuit,
-            "saison": saison,
-            "total": total
-        }
+        "prix_nuit": 190,
 
-        return redirect("/panier")
+        "total": 1330
+
+    }
 
     return render_template("reservation.html")
-
-
+    
 @app.route("/supplements")
 def supplements():
     return render_template("supplements.html")
@@ -119,23 +91,15 @@ def paiement():
 
     reservation = session.get("reservation")
 
-    if reservation is None:
-        return redirect("/reservation")
-
-    if request.method == "POST":
-        return redirect("/confirmation")
-
     return render_template(
         "paiement.html",
         reservation=reservation
     )
+    
 @app.route("/confirmation")
 def confirmation():
 
     reservation = session.get("reservation")
-
-    if reservation is None:
-        return redirect("/")
 
     return render_template(
         "confirmation.html",
