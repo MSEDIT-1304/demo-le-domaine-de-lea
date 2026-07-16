@@ -125,15 +125,21 @@ Total : {{ reservation.total }} €
 
 <br>
 
-<a href="/paiement">
+<div style="text-align:center; margin-top:30px;">
 
-<button>
+    <a href="/confirmation">
+        <button>
+            Confirmation de réservation
+        </button>
+    </a>
 
-Continuer vers le paiement
+    <br><br>
 
-</button>
-
-</a>
+    <a href="/paiement">
+        <button>
+            Payer
+        </button>
+    </a>
 
 </div>
 {% else %}
