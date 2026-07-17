@@ -1,3 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paiement - Le Domaine de Léa</title>
+
+    <link rel="icon"
+          type="image/png"
+          href="{{ url_for('static', filename='images/logo.png') }}">
+
+    <link rel="apple-touch-icon"
+          href="{{ url_for('static', filename='images/logo.png') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="/">Accueil</a>
+    <a href="/chalet">Le chalet</a>
+    <a href="/photos">Photos</a>
+    <a href="/tarifs">Tarifs</a>
+    <a href="/reservation">Réservation</a>
+    <a href="/panier">Panier</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<img src="{{ url_for('static', filename='images/banniere.jpg') }}" class="banniere">
+
+<div class="contenu">
+
 🔒 Démonstration
 
 Vous êtes arrivé à l'étape du paiement.
